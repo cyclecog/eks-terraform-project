@@ -8,6 +8,7 @@ Infrastructure is fully defined as code.
 All resources are reproducible, trackable, and can be deployed or destroyed in one command.
 
 ## Project Structure
+```
 eks-terraform-project/
 ├── terraform/
 │   ├── backend.tf
@@ -20,7 +21,7 @@ eks-terraform-project/
 │   ├── ingress.yaml
 │   └── hpa.yaml
 └── README.md
-
+```
 ## Infrastructure Features
 - Full custom VPC with public subnets and private subnets
 - Internet Gateway for external network access
