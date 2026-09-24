@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfvars
+crash.log
+
+# AWS
+.aws/
+
+# Kubernetes
+.kube/
+
+# Others
+*.log
+.DS_Store

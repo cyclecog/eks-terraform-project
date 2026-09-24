@@ -1,0 +1,13 @@
+# service.yaml
+# Internal service for nginx deployment
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-demo-svc
+spec:
+  selector:
+    app: nginx-demo
+  ports:
+  - port: 80
+    targetPort: 80
+  type: ClusterIP

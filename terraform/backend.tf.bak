@@ -1,0 +1,10 @@
+# backend.tf
+terraform {
+  backend "s3" {
+    bucket         = "unique-bucket-name-eks-demo-xxx"
+    key            = "eks/terraform.tfstate"
+    region         = "ap-southeast-1"
+    dynamodb_table = "eks-terraform-lock"
+    encrypt        = true
+  }
+}
